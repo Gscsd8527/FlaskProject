@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>这是模板</h3>
+<h5>这是首页</h5>
+{{ url_str }}
+<h4>传列表</h4>
+{% for my in my_list %}
+{{ my }}<br/>
+{% endfor %}
+<p>或者这种方式</p>
+{{ my_list.2 }}
+<p>和</p>
+{{ my_list[1] }}
+<p>-----------------------------</p>
+<h4>传字典</h4>
+{{ my_dict }}<br>
+{{ my_dict.name }}<br>
+{{ my_dict['name'] }}
+</body>
+</html>
